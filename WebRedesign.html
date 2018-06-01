@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>Warframe Hub</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+		<link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			html,body
+			{
+				width:100%;
+				height:100%;
+				margin:0;
+				padding:0;
+				font-family:'Michroma';
+				font-size:30px;
+			}
+			.dropdown-button
+			{
+				position:relative;
+				padding-top:10px;
+				box-sizing: border-box;
+				float:left;
+				border-style:solid;
+				border-color:grey;
+				text-align:center;
+				background-color:black;
+				display:inline-block;
+				color:white;
+				width:25%;
+				height:7.5%;
+			}
+			
+			.dropdown-box
+			{
+				display:inline;
+				visibility:collapse;
+				position:relative;
+				width:100%;
+				height:100%;
+				bottom:170px;
+				transition: all .5s;
+				z-index:-1;
+			}
+			.dropdown-content
+			{
+				display:inline-block;
+				background-color:white;
+				color:black;
+				width:100%;
+				height:60px;
+				position:relative;
+				border-style:solid;
+				border-color:grey;
+				margin:auto;
+			}
+			.dropdown-content:hover
+			{
+				background-color:#d6f5f5;
+				cursor:pointer;
+			}
+			.dropdown-button:hover .dropdown-box
+			{
+				visibility:visible;
+				bottom:0px;
+				
+			}
+			@media screen and (max-width: 800px)
+			{
+				.dropdown-button
+				{
+					width:50%;
+				}
+				.dropdown-box:active .dropdown-box
+				{
+					display:none;
+				}
+			}
+		</style>
+		<meta charset="UTF-8">
+		<meta name="description" content="A hub for useful things Warframe">
+		<meta name="keywords" content="Hub, Warframe, Timer, Market">
+		<meta name="author" content="SgtFlexxx">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		</head>
+	<body>
+			<div class="dropdown-button"> Alerts/Events
+				<div class="dropdown-box">
+					<div class="dropdown-content"> Drop 1 </div>
+					<div class="dropdown-content"> Drop 2 </div>
+					<div class="dropdown-content"> Drop 3 </div>
+				</div>
+			</div>
+			<div class="dropdown-button"> Farm
+				<div class="dropdown-box">
+				<div class="dropdown-content"> Drop 1 </div>
+				<div class="dropdown-content"> Drop 2 </div>
+				<div class="dropdown-content"> Drop 3 </div>
+				</div>
+			</div>
+			<div class="dropdown-button"> Trade
+				<div class="dropdown-box">
+				<div class="dropdown-content"> Drop 1 </div>
+				<div class="dropdown-content"> Drop 2 </div>
+				<div class="dropdown-content"> Drop 3 </div>
+				</div>
+			</div>
+			<div class="dropdown-button"> Information
+				<div class="dropdown-box">
+				<div class="dropdown-content"> Drop 1 </div>
+				<div class="dropdown-content"> Drop 2 </div>
+				<div class="dropdown-content"> Drop 3 </div>
+				</div>
+			</div>
+		<iframe src="https://forums.warframe.com/" style="position:relative; background-color:white; border:none; width:100%; height:100%; margin:0; padding:0; z-index:-2;">
+		</iframe>
+	</body>
+</html>
