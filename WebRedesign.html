@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>Warframe Hub</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+		<link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			html,body
+			{
+				width:100%;
+				height:100%;
+				margin:0;
+				padding:0;
+				font-family:'Michroma';
+				font-size:30px;
+				overflow-x:hidden;
+			}
+			.dropdown-button
+			{
+				position:relative;
+				padding-top:10px;
+				box-sizing: border-box;
+				float:left;
+				border-style:solid;
+				border-color:grey;
+				text-align:center;
+				background-color:black;
+				display:inline-block;
+				color:white;
+				width:25%;
+				height:7.5%;
+				transition:background-color 0.35s;
+			}
+			
+			.dropdown-box
+			{
+				position:relative;
+				display:block;
+				visibility:hidden;
+				width:100%;
+				height:100%;
+				bottom:170px;
+				transition: all .5s;
+				opacity:0;
+				z-index:2;
+
+			}
+			.dropdown-content
+			{
+				overflow:hidden;
+				position:relative;
+				box-sizing: border-box;
+				display:inline-block;
+				background-color:white;
+				color:black;
+				width:100%;
+				height:60px;
+				border-style:solid;
+				border-color:grey;
+				transition:all 0.35s;
+			}
+			.dropdown-content:hover
+			{
+				background-color:#d6f5f5;
+				border-color:#ffdd99;
+				cursor:pointer;
+			}
+			.dropdown-button:hover .dropdown-box
+			{
+				opacity:1;
+				visibility:visible;
+				bottom:-10px;
+			}
+			.dropdown-button:hover
+			{
+				background-color:grey;
+			}
+			@media screen and (max-width: 800px)
+			{
+				.dropdown-button
+				{
+					width:50%;
+				}
+			}
+		</style>
+		<meta charset="UTF-8">
+		<meta name="description" content="A hub for useful things Warframe">
+		<meta name="keywords" content="Hub, Warframe, Timer, Market">
+		<meta name="author" content="SgtFlexxx">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		</head>
+	<body>
+		<div class="dropdown-button"> Information
+			<div class="dropdown-box">
+				<div class="dropdown-content"> Welcome </div>
+				<div class="dropdown-content"> Warframe Wiki </div>
+				<div class="dropdown-content"> Alerts/Events </div>
+				<div class="dropdown-content"> Builds </div>
+			</div>
+		</div>
+		<div class="dropdown-button"> Farm
+			<div class="dropdown-box">
+			<div class="dropdown-content"> War.farm </div>
+			<div class="dropdown-content"> Reliquary </div>
+			<div class="dropdown-content"> Official drop table </div>
+			</div>
+		</div>
+		<div class="dropdown-button"> Trade
+			<div class="dropdown-box">
+			<div class="dropdown-content"><a href="https://warframe.market" target="mainframe"> Warfrrame.market </a></div>
+			<div class="dropdown-content"> wftrader.com </div>
+			<div class="dropdown-content"> Riven.market </div>
+			</div>
+		</div>
+		<div class="dropdown-button"> Changelog
+			<div class="dropdown-box">
+			<div class="dropdown-content"> PC </div>
+			<div class="dropdown-content"> Xbox </div>
+			<div class="dropdown-content"> Playstation </div>
+			</div>
+		</div>
+		<iframe src="https://forums.warframe.com/" name="mainframe" style="display:inline-block; position:relative; z-index:1; background-color:white; border:none; width:100%; height:100%; margin:0; padding:0;">
+		</iframe>
+	</body>
+</html>
