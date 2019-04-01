@@ -1,0 +1,215 @@
+<html>
+	<head>
+		<title>Warframe Hub</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+		<link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<base target="mainframe">
+		<style>
+			html,body
+			{
+				width:100%;
+				height:100%;
+				margin:0;
+				padding:0;
+				font-family:'Michroma';
+				font-size:1.5vw;
+				overflow-x:hidden;
+			}
+			a {
+				text-decoration: none;
+				display: block;
+			}
+			.dropdown-halfbar
+			{
+				width:50%;
+				position:relative;
+				float:left;
+				display:inline-block;
+				height:7.5%;
+				max-height: 75px;
+                box-sizing: border-box;
+                background-color:red;
+			}
+			.dropdown-content-container
+			{
+				width:100%;
+			}
+			.dropdown-button
+			{
+				padding-top:10px;
+				box-sizing: border-box;
+				float:left;
+				border-style:solid;
+				border-color:grey;
+				text-align:center;
+				background-color:black;
+				display:inline-block;
+				color:white;
+				width:50%;
+                height:100%;
+				transition:background-color 0.35s;
+			}
+			.dropdown-box
+			{
+				position:relative;
+				display:block;
+				visibility:hidden;
+				width:100%;
+				height:100%;
+				bottom:170px;
+				transition: all .35s;
+				opacity:0;
+				z-index:5;
+			}
+			.dropdown-content
+			{
+				overflow:hidden;
+				position:relative;
+				box-sizing: border-box;
+				display:inline-block;
+				background-color:white;
+				color:black;
+				width:80%;
+				height:60px;
+				border-style:solid;
+				border-color:grey;
+				transition:all 0.35s;
+				float:left;
+
+			}
+			.dropdown-content-newtab
+			{
+				overflow:hidden;
+				position:relative;
+				box-sizing: border-box;
+				display:inline-block;
+				background-color:white;
+				color:black;
+				width:20%;
+				height:60px;
+				border-style:solid;
+				border-color:grey;
+				transition:all 0.35s;
+				float:left;
+			}
+			.dropdown-content:hover, .dropdown-content-newtab:hover
+			{
+				background-color:#d6f5f5;
+				border-color:#ffdd99;
+				cursor:pointer;
+			}
+			.dropdown-content:active, .dropdown-content-newtab:active
+			{
+				transition:background-color 0.1s;
+				background-color:#28a4a4;
+			}
+			.dropdown-button:hover .dropdown-box
+			{
+				opacity:1;
+				visibility:visible;
+				bottom:-10px;
+			}
+			.dropdown-button:hover
+			{
+				background-color:grey;
+			}
+			@media screen and (max-width: 800px)
+			{
+                html, body {
+                    font-size:3vw;
+                }
+				.dropdown-halfbar
+				{
+                    width:100%;
+					display:block;
+				}
+			}
+		</style>
+		<meta charset="UTF-8">
+		<meta name="description" content="A hub for useful things Warframe">
+		<meta name="keywords" content="Hub, Warframe, Timer, Market">
+		<meta name="author" content="SgtFlexxx">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		</head>
+	<body>
+		<div class="dropdown-halfbar" style="z-index: 10">
+		<div class="dropdown-button"> Information
+			<div class="dropdown-box">
+				<div class="dropdown-content-container">	
+					<div class="dropdown-content"><a href="welcome.html"> Welcome </a></div>
+					<div class="dropdown-content-newtab"><a href="welcome.html" target="_blank"> + </div>
+				</div>
+				<div class="dropdown-content-container">
+				<div class="dropdown-content"><a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki"> Warframe Wiki </a></div>
+				<div class="dropdown-content-newtab"><a href="https://warframe.fandom.com/wiki/WARFRAME_Wiki" target="_blank"> + </div>
+				</div>
+				<div class="dropdown-content-container">
+				<div class="dropdown-content" style="width:100%"><a href="https://tenno.tools" target="_blank"> [+]Alerts/Events </a></div>
+				</div>
+				<div class="dropdown-content-container">
+				<div class="dropdown-content" style="width:100%"><a href="http://warframe-builder.com/"target="_blank"> [+]Builds </a></div>
+				</div>
+				<div class="dropdown-content-container">
+				<div class="dropdown-content"><a href="https://semlar.com/rivencalc"> Riven Calculator </a></div>
+				<div class="dropdown-content-newtab"><a href="https://semlar.com/rivencalc" target="_blank"> + </div>
+				</div>
+			</div>
+		</div>
+		<div class="dropdown-button"> Acquire
+			<div class="dropdown-box">
+				<div class="dropdown-content-container">
+				<div class="dropdown-content"><a href="https://www.war.farm/"> War.farm </a></div>
+				<div class="dropdown-content-newtab"><a href="https://www.war.farm/" target="_blank"> + </div>
+				</div>
+				<div class="dropdown-content-container">
+				<div class="dropdown-content" style="width:100%"><a href="https://wf.xuerian.net/#welcome"target="_blank"> [+]Reliquary </a></div>
+				</div>
+				<div class="dropdown-content-container">
+				<div class="dropdown-content"><a href="https://n8k6e2y6.ssl.hwcdn.net/repos/hnfvc0o3jnfvc873njb03enrf56.html"> Official drop table </a></div>
+				<div class="dropdown-content-newtab"><a href="https://n8k6e2y6.ssl.hwcdn.net/repos/hnfvc0o3jnfvc873njb03enrf56.html" target="_blank"> + </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dropdown-halfbar" style="z-index: 9">
+		<div class="dropdown-button"> Trade
+			<div class="dropdown-box">
+			<div class="dropdown-content-container">
+			<div class="dropdown-content"><a href="https://warframe.market"> Warframe.market </a></div>
+			<div class="dropdown-content-newtab"><a href="https://warframe.market" target="_blank"> + </div>
+				</div>
+			<div class="dropdown-content-container">
+			<div class="dropdown-content"><a href="https://riven.market/"> Riven.market </a></div>
+			<div class="dropdown-content-newtab"><a href="https://riven.market/" target="_blank"> + </div>
+				</div>
+			</div>
+		</div>
+		<div class="dropdown-button"> Community
+			<div class="dropdown-box">
+			<div class="dropdown-content-container">
+			<div class="dropdown-content" style="width:100%"><a href="https://forums.warframe.com/"target="_blank"> [+]Forums </a></div>
+				</div>
+			<div class="dropdown-content-container">
+			<div class="dropdown-content" style="width:100%"><a href="https://forums.warframe.com/"target="_blank"> [+]News </a></div>
+				</div>
+			<div class="dropdown-content-container">
+			<div class="dropdown-content" style="width:100%"><a href="https://devtrackers.gg/warframe"target="_blank"> [+]Dev Tracker </a></div>
+				</div>
+			<div class="dropdown-content-container">
+			<div class="dropdown-content" style="width:100%"><a href="https://forums.warframe.com/forum/3-pc-update-notes/"target="_blank"> [+]PC Changelog </a></div>
+				</div>
+			<div class="dropdown-content-container">
+			<div class="dropdown-content" style="width:100%"><a href="https://forums.warframe.com/forum/253-xbox-one-update-notes/"target="_blank"> [+]Xbox Changelog </a></div>
+				</div>
+			<div class="dropdown-content-container">
+			<div class="dropdown-content" style="width:100%"><a href="https://forums.warframe.com/forum/152-ps4-update-notes/"target="_blank"> [+]Playstation Changelog </a></div>
+			</div>
+			</div>
+		</div>
+	</div>
+		<iframe src="welcome.html" name="mainframe" style="display:inline-block; position:relative; z-index:0; background-color:white; border:none; width:100%; height:94%; margin:0; padding:0; position:relative;float:left;	display:inline-block; box-sizing:border-box;">
+		</iframe>
+	</body>
+</html>
